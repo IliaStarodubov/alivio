@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    background: #E5E5E5;
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 100%;
+    margin: 0;
+    line-height: 150%;
+}
+
+body h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 74px;
+    color: #01996D;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5px 0 5px 0;
+    line-height: 24px;
+    max-width: 1370px;
+    margin: auto;
+}
+
+.menu::after {           /* полоска с помощью афтер */
+    /* content: '';
+    position: absolute;
+    width: 1000px;
+    bottom: 0;
+    height: 10px;
+    left: 50%;
+    margin-left: -500px ;
+    background: #D6D6D6; */
+}
+
+.menu ol {
+    display: flex;
+    list-style-type: none;
+}
+
+.logo {
+    width: 80px;
+    height: 23px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0 35px 0 35px;
+}
+
+ a:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    padding: 13px 50px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.image {
+    border-top: 1px solid #D6D6D6;
+    background-image: url(/main.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.image .content {
+    padding: 200px 0 200px 0;
+    max-width: 1370px;
+    margin: auto;
+}
+
+/* 2 страничка */
+
+.works {
+    max-width: 1370px;
+    margin: 0 auto 50px;
+}
+
+.works img {
+    border-radius: 5px;
+}
+
+.works-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 90px 0 0 0;
+}
+
+.works-item h1 {
+    font-size: 35px;
+    line-height: 157%;
+}
+
+.works-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 1150px;
+}
+
+.works-column {
+    max-width: 390px;
+    position: relative;
+}
+
+.item-number {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: left;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.item-title {
+    position: absolute;
+    left: 100px;
+    top: 136px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.item-text {
+    margin: 40px 0 40px 0;
+}
+
+.works-column:nth-child(2) {
+    align-self: flex-end;
+}
+
+.works-column:nth-child(3) {
+    align-self: center;
+}
+
+/* 3 страничка */
+
+.about {
+    background: linear-gradient(45deg, rgb(3, 54, 43), rgb(21, 159, 163));
+    background-size: 100%;
+}
+
+.conteiner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1370px;
+    margin: auto;
+    padding: 150px 0 150px;
+}
+
+.about-content h1,
+.about-content p {
+    color: white;
+}
+
+/* 4 странциа */
+
+.poruduct {
+    position: relative;
+}
+
+.poruduct img {
+    background: rgba(1, 153, 109, 0.2);
+    border-radius: 18px;
+    margin: 0 0 0 40px;
+}
+
+.product-column {
+    text-align: center;
+    background: white;
+    position: absolute;
+    bottom: -40px;
+    padding: 15px;
+    box-shadow: -1px 2px 32px 13px rgba(0, 0, 0, 0.2);
+}
+
+.product-item__title {
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 157%;
+    padding: 0 0 10px 0;
+}
+
+.product-item__title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    height: 2px;
+    left: 50%;
+    margin-left: -50px ;
+    background: black;
+}
+
+.product-column img {
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.product-item__text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;   
+    line-height: 157%;
+    padding: 0 0 10px 0;
+}
+
+.product-item__list {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 157%;
+    text-align: left;
+}
+
+.product-content p:nth-child(1) {
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+
+/* футер */
+
+footer {
+    background: linear-gradient(45deg, rgb(31, 54, 49), rgb(13, 120, 124));
+    background-size: 100%;
+    color: white;
+}
+
+
+.list {
+    max-width: 1370px;
+    margin: auto;
+    padding: 50px 0 50px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 30px 0 30px;
+}
+
+footer ol {
+    list-style-type: none;
+}
+
+footer p {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 55px;
+}
