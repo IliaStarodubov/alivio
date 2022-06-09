@@ -56,7 +56,7 @@ body {
     opacity: 0.7;
 }
 
-span .mod_a {
+.login .mod_a {
     margin-right: 30px;
 }
 
@@ -88,6 +88,12 @@ span .mod_a {
     border-top: 1px solid #D6D6D6
 }
 
+.content {
+    display: flex;
+    min-height: 858px;
+    align-items: center;
+}
+
 .content-image {  
     max-width: 440px;
 }
@@ -95,11 +101,11 @@ span .mod_a {
 .content-image .mod_p {
     font-size: 65px;
     line-height: 74px;
-    margin: 175px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .content-image .btn {
-    margin: 30px 0 336px 0;
+    margin-top: 30px;
 }
 
 /* 2 works */
@@ -219,7 +225,7 @@ span .mod_a {
     margin-top: 57px;
 }
 
-.about-item iframe {
+.about-item .video {
     min-width: 895px;
     min-height: 516px;
 }
